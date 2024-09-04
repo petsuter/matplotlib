@@ -980,7 +980,7 @@ def json_load(filename):
     --------
     json_dump
     """
-    with open(filename) as fh:
+    with open(filename, encoding='utf-8') as fh:
         return json.load(fh, object_hook=_json_decode)
 
 
